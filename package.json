@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@solana/web3.js": "^1.31.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "name": "SPLStake",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RougeShadow/SPLStake.git",
+  "author": "pinnockm2 <pinnockm2@coventry.ac.uk>",
+  "license": "MIT"
+}
