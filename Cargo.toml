@@ -1,5 +1,5 @@
 [package]
-name = "rusting"
+name = "main"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,3 +7,6 @@ edition = "2021"
 
 [dependencies]
 solana-program ="1.9.4" 
+
+[lib]
+crate-type = ["cdylib","lib"]

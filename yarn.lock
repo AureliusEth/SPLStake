@@ -236,6 +236,13 @@
   "resolved" "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz"
   "version" "2.20.3"
 
+"commander@~1.1.1":
+  "integrity" "sha1-UNFlGGiuYOzP8KLZ80WVN2vGsEE="
+  "resolved" "https://registry.npmjs.org/commander/-/commander-1.1.1.tgz"
+  "version" "1.1.1"
+  dependencies:
+    "keypress" "0.1.x"
+
 "create-require@^1.1.0":
   "integrity" "sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ=="
   "resolved" "https://registry.npmjs.org/create-require/-/create-require-1.1.1.tgz"
@@ -369,6 +376,11 @@
     "jsonparse" "^1.2.0"
     "through" ">=2.2.7 <3"
 
+"keypress@0.1.x":
+  "integrity" "sha1-SjGI1CkbZrT2XtuZ+AaqmuKTWSo="
+  "resolved" "https://registry.npmjs.org/keypress/-/keypress-0.1.0.tgz"
+  "version" "0.1.0"
+
 "lodash@^4.17.20":
   "integrity" "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
   "resolved" "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
@@ -422,6 +434,13 @@
   optionalDependencies:
     "bufferutil" "^4.0.1"
     "utf-8-validate" "^5.0.2"
+
+"rust@^0.1.6":
+  "integrity" "sha1-rMSuunp+MZNbHHaEhg/AAB2iTJw="
+  "resolved" "https://registry.npmjs.org/rust/-/rust-0.1.6.tgz"
+  "version" "0.1.6"
+  dependencies:
+    "commander" "~1.1.1"
 
 "safe-buffer@^5.0.1":
   "integrity" "sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ=="
