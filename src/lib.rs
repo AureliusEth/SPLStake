@@ -16,7 +16,5 @@ fn process_instruction(_program_id: &Pubkey,
     };
     
     msg!("your in control!");
-    let accounts_iter = &mut _accounts.iter();
-    let account = next_account_info(accounts_iter)?;
     Ok(())
 }
