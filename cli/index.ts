@@ -8,10 +8,7 @@ const programId  = new web3.PublicKey("895ZeWDVGjZmoSwbPq72Ms3q7QxkL2bN83EAn1LVc
 const mintPub = new web3.PublicKey("F7Nm4LAWYnn7k2Pa8VxRNNZzzijbDuBknRmtzWa86WVX")
 const key: Uint8Array = Uint8Array.from([9,107,84,74,163,67,202,96,121,49,136,163,149,4,146,171,41,152,210,46,128,23,70,150,25,78,218,127,7,176,133,62,221,66,111,57,66,6,198,70,240,89,153,84,130,3,123,16,8,86,9,124,0,144,71,210,47,240,85,245,118,5,236,100])
 const senderKeypair: Keypair = Keypair.generate();
-<<<<<<< HEAD
-=======
 import * as readline from 'readline';
->>>>>>> Test-Branch
 
 var create_reward_pool
 setTimeout(async function(){ 
@@ -41,10 +38,6 @@ setTimeout(async function(){
         signer
       );
 
-<<<<<<< HEAD
-}, 20000);
-
-=======
     var fromTokenAccount = await usersToken.getOrCreateAssociatedAccountInfo(
         signer.publicKey
       )
@@ -101,5 +94,4 @@ setTimeout(async function(){
       console.log("SUCCESS");
 
 }, 20000);
->>>>>>> Test-Branch
 
