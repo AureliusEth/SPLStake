@@ -1,0 +1,1 @@
+/home/th3shadow/.config/solana/id.json

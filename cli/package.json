@@ -12,6 +12,7 @@
   "dependencies": {
     "@solana/spl-token": "^0.1.8",
     "@solana/web3.js": "^1.31.0",
+    "nthline": "^1.0.2",
     "web3": "^1.6.1"
   }
 }

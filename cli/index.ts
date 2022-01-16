@@ -1,17 +1,59 @@
 
 import { Keypair, LAMPORTS_PER_SOL, sendAndConfirmTransaction, SystemProgram, Transaction } from '@solana/web3.js';
 import * as web3 from '@solana/web3.js';
+const nthline = require('nthline')
 import { Token, TOKEN_PROGRAM_ID } from "@solana/spl-token";
 const splToken = require('@solana/spl-token');
 const connection = new web3.Connection(web3.clusterApiUrl("devnet"))
-const programId  = new web3.PublicKey("895ZeWDVGjZmoSwbPq72Ms3q7QxkL2bN83EAn1LVcGay")
-const mintPub = new web3.PublicKey("F7Nm4LAWYnn7k2Pa8VxRNNZzzijbDuBknRmtzWa86WVX")
-const key: Uint8Array = Uint8Array.from([9,107,84,74,163,67,202,96,121,49,136,163,149,4,146,171,41,152,210,46,128,23,70,150,25,78,218,127,7,176,133,62,221,66,111,57,66,6,198,70,240,89,153,84,130,3,123,16,8,86,9,124,0,144,71,210,47,240,85,245,118,5,236,100])
+//const programId  = new web3.PublicKey("895ZeWDVGjZmoSwbPq72Ms3q7QxkL2bN83EAn1LVcGay")
+//const mintPub = new web3.PublicKey("F7Nm4LAWYnn7k2Pa8VxRNNZzzijbDuBknRmtzWa86WVX")
+
+const fs = require('fs')
+//const key: Uint8Array = Uint8Array.from([9,107,84,74,163,67,202,96,121,49,136,163,149,4,146,171,41,152,210,46,128,23,70,150,25,78,218,127,7,176,133,62,221,66,111,57,66,6,198,70,240,89,153,84,130,3,123,16,8,86,9,124,0,144,71,210,47,240,85,245,118,5,236,100])
 const senderKeypair: Keypair = Keypair.generate();
+
 import * as readline from 'readline';
+import { resolve } from 'path';
+import { reject } from 'lodash';
+
 
 var create_reward_pool
-setTimeout(async function(){ 
+setTimeout(async function(){
+    let pKey: number[] = [] 
+    console.log("wait!")
+ 
+    let keyinfo = fs.readFileSync("keyInfo.txt", 'utf8')
+    let data = fs.readFileSync(keyinfo.toString(),"utf8")
+    var buildkey = ""
+    for (const ch of data){
+        
+        if (ch != "," && ch !="]" && ch!="["){
+            buildkey = buildkey+ch
+            console.log(buildkey)
+            setTimeout(function(){
+            }, 1000); 
+        }
+        
+        if (ch === "," || ch === "]"){
+            pKey.push(Number(buildkey))
+            console.log("Okay")
+            buildkey = ""
+            
+        }
+        
+    };
+    
+    const rawPubMint = fs.readFileSync("addressInfo.txt", 'utf8')   
+    //console.log(pKey)
+    console.log(rawPubMint)
+    console.log(pKey)
+
+    //pKey.splice(0,1)
+    //pKey.splice(-1,1)
+    console.log(pKey.length)
+    const mintPub = new web3.PublicKey(rawPubMint)
+    console.log("Accepted Mint Address")
+    const key: Uint8Array = Uint8Array.from(pKey)
     const Arrived = await connection.requestAirdrop(senderKeypair.publicKey, LAMPORTS_PER_SOL);
     await connection.confirmTransaction(Arrived);
     const signer: web3.Keypair=web3.Keypair.fromSecretKey(key)

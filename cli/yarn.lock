@@ -2055,6 +2055,11 @@
   "resolved" "https://registry.npmjs.org/normalize-url/-/normalize-url-4.5.1.tgz"
   "version" "4.5.1"
 
+"nthline@^1.0.2":
+  "integrity" "sha512-8RFu9qRI4dcSj38LP4db3IZ1Lb24aM8VZJhTVdHtwBJN/PVYIIxm5lmbK3sVSvPlXQmiruncbrJ9C7d1/FFZRA=="
+  "resolved" "https://registry.npmjs.org/nthline/-/nthline-1.0.2.tgz"
+  "version" "1.0.2"
+
 "number-to-bn@1.7.0":
   "integrity" "sha1-uzYjWS9+X54AMLGXe9QaDFP+HqA="
   "resolved" "https://registry.npmjs.org/number-to-bn/-/number-to-bn-1.7.0.tgz"
