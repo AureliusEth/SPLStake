@@ -877,6 +877,14 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
+"@types/jest@^27.4.0":
+  "integrity" "sha512-gHl8XuC1RZ8H2j5sHv/JqsaxXkDDM9iDOgu0Wp8sjs4u/snb2PVehyWXJPr+ORA0RPpgw231mnutWI1+0hgjIQ=="
+  "resolved" "https://registry.npmjs.org/@types/jest/-/jest-27.4.0.tgz"
+  "version" "27.4.0"
+  dependencies:
+    "jest-diff" "^27.0.0"
+    "pretty-format" "^27.0.0"
+
 "@types/lodash@^4.14.159":
   "integrity" "sha512-0d5Wd09ItQWH1qFbEyQ7oTQ3GZrMfth5JkbN3EvTKLXcHLRDSXeLnlvlOn0wvxVIwK5o2M8JzP/OWz7T3NRsbw=="
   "resolved" "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.178.tgz"
@@ -3097,7 +3105,7 @@
     "pretty-format" "^27.4.6"
     "slash" "^3.0.0"
 
-"jest-diff@^27.4.6":
+"jest-diff@^27.0.0", "jest-diff@^27.4.6":
   "integrity" "sha512-zjaB0sh0Lb13VyPsd92V7HkqF6yKRH9vm33rwBt7rPYrpQvS1nCvlIy2pICbKta+ZjWngYLNn4cCK4nyZkjS/w=="
   "resolved" "https://registry.npmjs.org/jest-diff/-/jest-diff-27.4.6.tgz"
   "version" "27.4.6"
@@ -4116,7 +4124,7 @@
   "resolved" "https://registry.npmjs.org/prepend-http/-/prepend-http-2.0.0.tgz"
   "version" "2.0.0"
 
-"pretty-format@^27.4.6":
+"pretty-format@^27.0.0", "pretty-format@^27.4.6":
   "integrity" "sha512-NblstegA1y/RJW2VyML+3LlpFjzx62cUrtBIKIWDXEDkjNeleA7Od7nrzcs/VLQvAeV4CgSYhrN39DRN88Qi/g=="
   "resolved" "https://registry.npmjs.org/pretty-format/-/pretty-format-27.4.6.tgz"
   "version" "27.4.6"
