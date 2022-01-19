@@ -5,6 +5,7 @@ Description
 This program performs various staking functions such as minting and getting a users SPL Token and locking it up in a contract for the purpose of staking.
 
 Instructions:
+
 0. cd into the cli part of the program.
 1. Put the path to your private key (/id.json) into the keyInfo.txt file.
 2. Put your chosen tokens public mint address into the file called addressInfo.txt.
